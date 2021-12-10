@@ -10,24 +10,43 @@
 </head>
 <body>
 <header class="header">
+    <div class="overlay has-fade"></div>
     <nav class="container container--pall flex flex-jc-sb flex-ai-c">
-        <a href="#" class="header__logo">LOGO</a>
+        <a href="#" class="header__left">Logo</a>
         <a
             id="btnHamburger"
-            href="#"
+            href="#" v
             class="header__toggle hide-for-desktop"
         >
             <span></span>
             <span></span>
             <span></span>
         </a>
-        <div class="header__links hide-for-mobile">
-            <a href="#">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
+        <div class="header__right flex flex-ai-c hide-for-mobile">
+            <div class="header__links flex flex-ai-c ">
+                <a href="#">Acceuil</a>
+                <a href="#">Realisation</a>
+                <a href="#">Contact</a>
+                <a href="#" class="active">Se connecter</a>
+            </div>
+            <div class="header__lang flex">
+                <button class="langFr">
+                    <img src="images/france.png" alt="Langue france">
+                </button>
+                <button class="langEn">
+                    <img src="images/amerique.png" alt="Langue anglaise">
+                </button>
+            </div>
+
         </div>
     </nav>
+    <div class="header__menu has-fade">
+        <a href="#">Acceuil</a>
+        <a href="#">Realisation</a>
+        <a href="#">Contact</a>
+        <a href="#" class="active">Se connecter</a>
+    </div>
 </header>
+<script src="app/js/script.js"></script>
 </body>
 </html>

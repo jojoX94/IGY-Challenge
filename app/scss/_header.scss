@@ -1,14 +1,27 @@
 .header {
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
   & > nav {
-    padding-top: 1.21875rem;
-    padding-bottom: 1.21875rem;
+    padding-top: 0.67rem;
+    padding-bottom: 0.75rem;
   }
 
-  &__logo {
+  &__left {
     font-family: 'Oswald', sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
   }
 
   &__toggle {
@@ -26,11 +39,54 @@
     }
   }
 
+  &__right {
+
+  }
+
   &__links {
     a {
+
       font-size: $font-sm;
+      font-weight: 700;
+      text-transform: uppercase;
       transition: color 200ms ease-in-out;
       margin-right: 4.125rem;
+      transition: color 400ms ease-in-out;
+
+      &:hover {
+        color: $main;
+      }
+      &.active {
+        color: $main;
+      }
+
+    }
+  }
+
+  &__lang {
+    & > button:not(:last-child) {
+      margin-right: .375rem;
+    }
+
+  }
+
+
+  &__menu {
+    position: absolute;
+    left: 50%;
+    width: calc(100% - 3rem);
+    padding: 1.625rem;
+    margin-top: 1.5rem;
+    border-radius: 5px;
+    background: $white;
+    transform: translateX(-50%);
+    z-index: 999;
+
+    a {
+      display: block;
+      text-align: center;
+      padding: 0.625rem;
+      color: $black;
     }
   }
 
