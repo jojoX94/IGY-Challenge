@@ -73,11 +73,9 @@
       background-position: center;
       background-repeat: no-repeat;
       display: inline-block;
-      border: none;
       width: .9375rem;
       height: .625rem;
       transition: all 0.5s;
-      cursor: pointer;
 
       &:hover {
         transform: scale(1.5);

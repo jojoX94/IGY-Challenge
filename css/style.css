@@ -264,11 +264,9 @@ button.withEffect:hover:before {
   background-position: center;
   background-repeat: no-repeat;
   display: inline-block;
-  border: none;
   width: 0.9375rem;
   height: 0.625rem;
   transition: all 0.5s;
-  cursor: pointer;
 }
 .header__lang > button:hover {
   transform: scale(1.5);
@@ -468,6 +466,72 @@ button.withEffect:hover:before {
   .procedure__body > div {
     margin-bottom: 2.5rem;
   }
+}
+
+.image-frame {
+  position: relative;
+  width: 100%;
+  background-color: #F2F5F7;
+}
+.image-frame li {
+  display: inline-block;
+  padding: 2.8185rem 4.375rem;
+  margin: 0;
+}
+.image-frame img {
+  width: 7.75rem;
+  height: 2.125rem;
+  padding: 0;
+  margin: 0;
+  display: block;
+  line-height: 1.375rem;
+}
+.image-frame .images {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+.image-frame .arrow {
+  position: absolute;
+  display: inline-block;
+  top: 2.65rem;
+}
+.image-frame .prev {
+  left: 2.375rem;
+  background-image: url("../../images/Left.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s;
+}
+.image-frame .next {
+  right: 2.375rem;
+  background-image: url("../../images/Right.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 3rem;
+  height: 3rem;
+  transition: all 0.5s;
+}
+.image-frame .gallary {
+  max-width: 75rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.image-frame .gallary ul {
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  /*height: 130px;*/
+  list-style: none;
+  font-size: 0;
+  transition: all 250ms;
 }
 
 /*# sourceMappingURL=style.css.map */
