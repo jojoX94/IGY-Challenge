@@ -68,11 +68,32 @@
   }
 
   &__lang {
+    & > button {
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      display: inline-block;
+      border: none;
+      width: .9375rem;
+      height: .625rem;
+      transition: all 0.5s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+    & .langFr {
+      background-image: url("../../images/france.png");
+    }
+    & .langEn {
+      background-image: url("../../images/amerique.png");
+    }
+
     & > button:not(:last-child) {
       margin-right: .375rem;
       @include breakpoint-down(medium) {
         margin-right: 1rem;
-
       }
     }
 

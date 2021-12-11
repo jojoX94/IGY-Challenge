@@ -31,12 +31,17 @@ body {
 
 }
 
+h1,h2 {
+  margin: 0;
+}
+
+
 // h1
 h1 {
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: $font-xlg;
-  line-height: 3.6875rem;
+  line-height: 3.125rem;
   text-transform: none;
   color: $black;
 
@@ -62,7 +67,7 @@ a, a:visited,a:hover {
 //Container
 .container {
   margin: 0 auto;
-  max-width: 69.275rem; //1110px
+  max-width: 75.525rem; //1060px: 69.275rem or 1160px: 75.525rem
   &--pall {
     padding-top: 4.375rem;
     padding-right: 1.5rem;
@@ -110,6 +115,10 @@ a, a:visited,a:hover {
 .flex {
   display: flex;
 
+  &-d-c {
+    flex-direction: column;
+  }
+
   &-jc-c {
     justify-content: center;
   }
@@ -124,6 +133,7 @@ a, a:visited,a:hover {
 //button
 button {
   padding: 0;
+  cursor: pointer;
   overflow: hidden;
   background: none;
   border: none;
@@ -136,8 +146,6 @@ button {
     font-size: $font-sm;
     font-weight: 600;
     color: $white;
-    cursor: pointer;
-    border: none;
     background: $main;
     border-radius: 3.125rem;
     transition: all .5s;
@@ -154,11 +162,13 @@ button {
       transition: all .5s;
       z-index: -1;
     }
-
+    &:hover {
+      color: $white;
+      z-index: 2;
+    }
     &:hover:before {
       top: 0;
       left: 0;
-
     }
   }
 }
