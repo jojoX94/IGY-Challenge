@@ -1,0 +1,43 @@
+.offer {
+  background: $bgGray;
+
+  & > .container {
+    padding-top: 4.6875rem;
+    padding-bottom: 8.125rem;
+  }
+
+  & h1 {
+    text-align: center;
+    margin-bottom: 3.875rem;
+  }
+
+  &__card {
+    max-width: 23.125rem;
+    background: $white;
+
+    & p {
+      padding: 1.25rem;
+    }
+  }
+
+  &__lists {
+    @include breakpoint-down(lg) {
+      justify-content: center;
+      gap: 1.75rem;
+    }
+  }
+
+  &__text {
+    & > div {
+      text-align: right;
+      margin-right: 1.5625rem;
+      padding-bottom: 2.625rem;
+
+      & > button {
+        font-family: 'Oswald', sans-serif;
+        font-weight: 700;
+        color: $main;
+      }
+    }
+  }
+}

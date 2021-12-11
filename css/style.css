@@ -321,7 +321,9 @@ button.withEffect:hover:before {
 
 .hero {
   background-image: url("../../images/hero.png");
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   min-height: 39.75rem;
 }
 @media (max-width: 63.9375em) {
@@ -598,6 +600,41 @@ button.withEffect:hover:before {
 
 [id="tag:lorem"]:target ~ [data-tag~=lorem] {
   display: block;
+}
+
+.offer {
+  background: #F2F5F7;
+}
+.offer > .container {
+  padding-top: 4.6875rem;
+  padding-bottom: 8.125rem;
+}
+.offer h1 {
+  text-align: center;
+  margin-bottom: 3.875rem;
+}
+.offer__card {
+  max-width: 23.125rem;
+  background: #FFFFFF;
+}
+.offer__card p {
+  padding: 1.25rem;
+}
+@media (max-width: 75em) {
+  .offer__lists {
+    justify-content: center;
+    gap: 1.75rem;
+  }
+}
+.offer__text > div {
+  text-align: right;
+  margin-right: 1.5625rem;
+  padding-bottom: 2.625rem;
+}
+.offer__text > div > button {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  color: #EB5956;
 }
 
 /*# sourceMappingURL=style.css.map */
