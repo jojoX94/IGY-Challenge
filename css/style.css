@@ -65,11 +65,13 @@ body.no-scroll {
   overflow: hidden;
 }
 
-h1, h2 {
+h1, h2, h3, p {
   margin: 0;
+  padding: 0;
 }
 
 h1 {
+  text-align: center;
   font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 2.5rem;
@@ -176,6 +178,13 @@ button.withEffect {
   background: #EB5956;
   border-radius: 3.125rem;
   transition: all 0.5s;
+}
+@media (max-width: 63.9375em) {
+  button.withEffect {
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 0.875rem;
+  }
 }
 button.withEffect:before {
   width: 100%;
@@ -362,6 +371,9 @@ button.withEffect:hover:before {
 .hero__desc {
   max-width: 20rem;
 }
+.hero__desc > h1 {
+  text-align: left;
+}
 .hero__desc span {
   color: #EB5956;
 }
@@ -378,6 +390,84 @@ button.withEffect:hover:before {
 }
 .hero__cta > button:nth-child(2):before {
   background: #EB5956;
+}
+
+.procedure {
+  background: #FFFFFF;
+}
+.procedure h1 {
+  padding-top: 4.5625rem;
+  margin-bottom: 3.25rem;
+}
+@media (max-width: 63.9375em) {
+  .procedure h1 {
+    margin-bottom: 1rem;
+  }
+}
+.procedure__content {
+  gap: 2.8125rem;
+}
+@media (max-width: 63.9375em) {
+  .procedure__content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.procedure__content > img {
+  order: 2;
+  padding-bottom: 4.5625rem;
+  transition: all 0.5s ease-in-out;
+}
+@media (max-width: 75em) {
+  .procedure__content > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 63.9375em) {
+  .procedure__content > img {
+    order: 1;
+    padding-bottom: 0;
+  }
+}
+.procedure__content > div {
+  min-width: 21.875rem;
+  order: 1;
+}
+@media (max-width: 63.9375em) {
+  .procedure__content > div {
+    order: 2;
+    max-width: 32rem;
+    min-width: 18rem;
+    margin: 0 auto;
+  }
+}
+.procedure__body > h3 {
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.375rem;
+  color: #000000;
+}
+@media (max-width: 63.9375em) {
+  .procedure__body > h3 {
+    margin-bottom: 0;
+  }
+}
+.procedure__body > p {
+  margin-bottom: 2rem;
+}
+@media (max-width: 63.9375em) {
+  .procedure__body > p {
+    line-height: 1.5;
+  }
+}
+.procedure__body > div {
+  text-align: right;
+}
+@media (max-width: 63.9375em) {
+  .procedure__body > div {
+    margin-bottom: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

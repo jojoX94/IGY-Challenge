@@ -31,13 +31,15 @@ body {
 
 }
 
-h1,h2 {
+h1,h2,h3,p {
   margin: 0;
+  padding: 0;
 }
 
 
 // h1
 h1 {
+  text-align: center;
   font-family: 'Oswald', sans-serif;
   font-weight: 700;
   font-size: $font-xlg;
@@ -137,6 +139,8 @@ button {
   overflow: hidden;
   background: none;
   border: none;
+
+
   &.withEffect {
     position: relative;
     width: 11.875rem;
@@ -149,6 +153,12 @@ button {
     background: $main;
     border-radius: 3.125rem;
     transition: all .5s;
+
+    @include breakpoint-down(medium) {
+      width: 10rem;
+      height: 2.5rem;
+      font-size: $font-sm;
+    }
 
     &:before {
       width: 100%;

@@ -53,21 +53,31 @@
       cursor: pointer;
     }
   }
+
   &__desc {
     max-width: 20rem;
+
+    & > h1 {
+      text-align: left
+    }
+
     & span {
       color: $main;
     }
+
     & > p {
       margin-top: 1.1875rem;
       margin-bottom: 1.6875rem;
       font-size: 1.25rem;
     }
   }
+
   &__cta {
     gap: 1rem;
+
     & > button:nth-child(2) {
       background: $black;
+
       &:before {
         background: $main;
       }
