@@ -23,6 +23,7 @@ body {
   font-weight: 400;
   color: $textGray;
   line-height: 1.875;
+  background: $white;
   overflow-x: hidden;
 
   &.no-scroll {
@@ -116,6 +117,11 @@ a, a:visited,a:hover {
 //Flexbox
 .flex {
   display: flex;
+
+  &-w-w {
+
+  flex-wrap: wrap;
+  }
 
   &-d-c {
     flex-direction: column;

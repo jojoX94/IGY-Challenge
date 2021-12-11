@@ -1,0 +1,75 @@
+.realization {
+  & > container {
+
+  }
+  & h1 {
+    margin-top:4.6875rem;
+    margin-bottom: 3.25rem;
+  }
+
+  &__title {
+    margin-bottom: 2.1875rem;
+
+    & > a {
+      padding: 0.875rem 4.375rem;
+      font-weight: 600;
+      color: $gray;
+      background: transparent;
+      transition: all .5s ease-in-out;
+
+      &.realization-active {
+        background: $main;
+      }
+
+      &:hover {
+        color: $gray;
+        background: $main;
+      }
+    }
+  }
+
+  &__content {
+    margin-bottom: 2.8125rem;
+
+    & > div {
+      padding: 1rem;
+    }
+
+    & img {
+      width: 370px;
+      height: 278px;
+    }
+  }
+  &__more {
+    padding-bottom: 4.625rem;
+    text-align: center;
+    & > button {
+      background: $black;
+
+      &:before {
+        background: $main;
+      }
+    }
+  }
+
+}
+
+.css-filter--target:not(:target) ~ .css-filter--item {
+  display: block;
+}
+
+.css-filter--target:target ~ .css-filter--item {
+  display: none;
+}
+
+[id="tag:plumbing"]:target ~ [data-tag~="plumbing"] {
+  display: block;
+}
+
+[id="tag:carpentry"]:target ~ [data-tag~="carpentry"] {
+  display: block;
+}
+
+[id="tag:lorem"]:target ~ [data-tag~="lorem"] {
+  display: block;
+}

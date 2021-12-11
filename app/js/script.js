@@ -1,4 +1,5 @@
 console.log("hey");
+// Responsive navbar
 const body = document.querySelector("body");
 const btnHamburger = document.querySelector("#btnHamburger");
 const header = document.querySelector(".header");
@@ -23,7 +24,7 @@ btnHamburger.addEventListener("click", function () {
   }
 });
 
-
+// Carousel of Company
 function Carousel(options){
   var elem = this.elem = options.elem;
   this.carousel = document.getElementById('carousel');
@@ -35,7 +36,6 @@ function Carousel(options){
   elem.getElementsByClassName('prev')[0].onclick = this.leftButtonClick.bind(this);
   elem.getElementsByClassName('next')[0].onclick = this.rightButtonClick.bind(this);
 };
-
 
 Carousel.prototype.leftButtonClick = function(){
   var self = this;
@@ -62,3 +62,7 @@ Carousel.prototype.rightButtonClick = function(){
 var carous = new Carousel({
   elem: document.getElementById('carousel')
 });
+
+
+// Realization link
+const allLinks = document.querySelector(".css-filter--link");
