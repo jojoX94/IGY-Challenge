@@ -1,0 +1,95 @@
+.members {
+  position: relative;
+  background-color: $bgGray;
+  & > .container {
+    position: relative;
+    padding-top: 4.6875rem;
+    padding-bottom: 7.1875rem;
+  }
+  &__container {
+    max-width: 39.5rem;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  & .arrow {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+  }
+
+  & .prevM {
+    left: 2.5625rem;
+    background-image: url("../../images/Left.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.5s;
+    z-index: 9;
+  }
+
+  & .nextM {
+    right: 2.5625rem;
+    background-image: url("../../images/Right.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.5s;
+    z-index: 9;
+  }
+
+  & h1 {
+    margin-bottom: 3.75rem;
+
+  }
+  &__list {
+    position: relative;
+    min-height: 18.75rem;
+  }
+  &__item {
+    max-width: 39.5rem;
+    gap: 2.75rem;
+    position: absolute;
+    clear:both;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    opacity: 0;
+    overflow: hidden;
+    @include breakpoint-down(small) {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    & > img {
+      max-width: 18.75rem;
+      max-height: 18.75rem;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    & p {
+      margin-bottom: 2.5625rem;
+      @include breakpoint-down(small) {
+        padding: 0 2rem;
+      }
+    }
+    &.slideActive {
+      z-index: 2;
+      opacity: 1;
+      transition: 1s;
+    }
+  }
+}

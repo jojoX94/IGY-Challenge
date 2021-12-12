@@ -66,3 +66,31 @@ var carous = new Carousel({
 
 // Realization link
 const allLinks = document.querySelector(".css-filter--link");
+
+// Slider Members section
+var slide = 0,
+  slides = document.querySelectorAll('#slides > .members__item'),
+  numSlides = slides.length
+
+currentSlide = function() {
+  var itemToShow = Math.abs(slide % numSlides);
+  console.log(itemToShow);
+  [].forEach.call(slides, function(el) {
+    el.classList.remove('slideActive')
+  });
+  slides[itemToShow].classList.add('slideActive');
+}
+next = function() {
+  slide++;
+  currentSlide();
+}
+  prev = function() {
+    slide--;
+    currentSlide();
+  }
+document.querySelector('.nextM').addEventListener('click', function() {
+  next();
+}, false);
+document.querySelector('.prevM').addEventListener('click', function() {
+  prev();
+}, false);
