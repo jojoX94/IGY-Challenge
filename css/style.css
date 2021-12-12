@@ -300,10 +300,10 @@ button.withEffect:hover:before {
   transform: scale(1.5);
 }
 .header__lang .langFr {
-  background-image: url("../../images/france.png");
+  background-image: url("../images/france.png");
 }
 .header__lang .langEn {
-  background-image: url("../../images/amerique.png");
+  background-image: url("../images/amerique.png");
 }
 .header__lang > button:not(:last-child) {
   margin-right: 0.375rem;
@@ -348,7 +348,7 @@ button.withEffect:hover:before {
 }
 
 .hero {
-  background-image: url("../../images/hero.png");
+  background-image: url("../images/hero.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,7 +389,7 @@ button.withEffect:hover:before {
 }
 .hero__search > button {
   margin-right: 1rem;
-  background-image: url("../../images/search.png");
+  background-image: url("../images/search.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -533,7 +533,7 @@ button.withEffect:hover:before {
 }
 .image-frame .prev {
   left: 2.375rem;
-  background-image: url("../../images/Left.png");
+  background-image: url("../images/Left.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -544,7 +544,7 @@ button.withEffect:hover:before {
 }
 .image-frame .next {
   right: 2.375rem;
-  background-image: url("../../images/Right.png");
+  background-image: url("../images/Right.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -769,7 +769,7 @@ button.withEffect:hover:before {
 }
 .members .prevM {
   left: 2.5625rem;
-  background-image: url("../../images/Left.png");
+  background-image: url("../images/Left.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -781,7 +781,7 @@ button.withEffect:hover:before {
 }
 .members .nextM {
   right: 2.5625rem;
-  background-image: url("../../images/Right.png");
+  background-image: url("../images/Right.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
